@@ -1,0 +1,148 @@
+* {
+     margin : 0;
+     padding : 0;    
+}
+.container {
+ width:1200px;
+ padding-left: 35px;
+}
+/*header*/
+header {
+    width : 100%;    
+     
+}
+
+header nav {
+    width : 100%;
+    height:50px;
+    background-color:gray;  
+    overflow: hidden;
+}
+
+header nav ul { 
+    list-style: none;
+    display: block;
+    width:30%;
+    padding-top:15px;  
+    
+}
+
+header nav ul li { 
+    float : left;
+    width: 50%;
+    text-align: center;   
+   
+}
+
+
+header nav ul li a {
+    color : white;
+    text-decoration-line: none;
+    font-size: 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;    
+    transition-timing-function: linear;
+     
+}
+header nav ul li a:hover {
+    background-color:darkgrey;
+    letter-spacing: 4px;
+    font-weight: bold;
+    transform: scale(1.8);
+    border-radius: 5px;
+}
+
+/* main */
+#main {
+    width:100%; 
+    padding-left: 30px;
+}
+
+#main article {
+    padding: 10px;
+    width:100%;
+    box-sizing: border-box;
+   
+    
+}
+
+#main article h1 {
+    margin-top:30px;
+    font-size : 50px;
+    
+}
+
+#main article a {
+    overflow: hidden;
+    display:block;
+    
+}
+
+#main article a img {
+    max-width: 300px;
+    height: 300px;
+    margin-top : 10px;
+    transition: all 0.2s linear;
+}
+
+#main article a img:hover {
+    transform : scale(1.2);
+}
+
+#main section {
+    width: 50%;
+    height: 100px;;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+#main section h2 {
+    font-size: 25px;
+}
+
+#main section ul {
+    margin-top:20px;
+}
+#main section ol {
+    margin-top: 20px;
+}
+
+#main section.one {
+    float:left;
+}
+
+#main section.two { 
+    float:right;
+}
+
+#main section.three {
+    float:left;
+}
+
+#main section.four {
+    float:right;
+}
+
+/* footer */
+footer {
+    clear:both;
+    width: 100%;
+}
+footer .copyright {
+    height:100px;
+    background-color: #eee;
+    padding-left: 30px;
+}
+footer .copyright p {
+    padding-top: 30px;
+}
+
+
+@media (min-width:320px) and (max-width:1200px){
+    .container {
+        width:600px;
+    }
+    header nav ul li a {
+        font-size: 16px;
+    }
+}
